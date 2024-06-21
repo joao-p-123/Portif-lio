@@ -10,13 +10,13 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
     <style>
         p {
@@ -27,6 +27,20 @@
             height: 100%;
             max-width: auto;
             border-radius: 50%;
+        }
+
+        .navbar-collapse {
+            position: fixed;
+            background-color: #2c3e50;
+            width: 100%;
+            left: -0%;
+            z-index: 1000;
+            height: 15%;
+        }
+
+        .mr-auto {
+            position: fixed;
+
         }
 
         .icones {
@@ -59,9 +73,7 @@
             margin-bottom: 0px;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+
 
         p {
             color: black !important;
@@ -120,9 +132,9 @@
     </style>
 </head>
 
-<body style="background-color: #2c3e50;">
+<body>
     <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="#" style="color:white">João Pedro Vieira</a>
+        <a class="navbar-brand" href="#" style="color:white"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
             aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -133,7 +145,7 @@
             <ul class="navbar-nav">
                 <li><a href="#projetos" class="nav-link" style="color:white">Projetos</a></li>
                 <li><a href="#sobre-mim" class="nav-link" style="color:white">Sobre mim</a></li>
-                <li><a href="#depoimentos" class="nav-link" style="color:white">Depoimentos</a></li>
+                <li><a href="#depoimentos" class="nav-link" style="color:white">Curriculo</a></li>
                 <li><a href="#contato" class="nav-link" style="color:white">Contato</a></li>
             </ul>
         </div>
@@ -226,9 +238,11 @@
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
-                                    <a href="https://github.com/joao-p-123/jade_confeitaria_caseira/blob/main/index.html"
-                                        class="btn btn-sm btn-outline-primary">Ver Código</a>
+                                    <a href="https://jadeconfeitaria.netlify.app"
+                                        class="btn btn-sm btn-outline-success">Ver Projeto</button>
+
+                                        <a href="https://github.com/joao-p-123/jade_confeitaria_caseira/blob/main/index.html"
+                                            class="btn btn-sm btn-outline-primary">Ver Código</a>
                                 </div>
                                 <small class="text-muted">Projeto Web</small>
                             </div>
