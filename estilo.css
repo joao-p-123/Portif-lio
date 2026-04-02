@@ -67,12 +67,13 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    padding: 14px 24px;
+    padding: 14px 32px;
     position: fixed;
     top: 18px;
     left: 50%;
     transform: translateX(-50%);
-    width: min(calc(100% - 32px), var(--max-width));
+    width: calc(100% - 32px);
+    max-width: 1440px;
     z-index: 1000;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 999px;
