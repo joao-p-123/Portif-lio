@@ -50,7 +50,7 @@ a {
 }
 
 .hero {
-    padding: 28px 24px 72px;
+    padding: 116px 24px 72px;
 }
 
 .navbar,
@@ -67,7 +67,18 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    padding: 10px 0 26px;
+    padding: 14px 24px;
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(calc(100% - 32px), var(--max-width));
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    background: rgba(8, 14, 29, 0.78);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
 }
 
 .brand {
@@ -89,6 +100,10 @@ a {
     flex-wrap: wrap;
     gap: 18px;
     color: var(--muted);
+}
+
+.nav-links a {
+    font-weight: 600;
 }
 
 .nav-links a:hover,
@@ -255,6 +270,11 @@ a {
 .section {
     padding: 84px 24px;
     color: var(--text-dark);
+    scroll-margin-top: 120px;
+}
+
+#inicio {
+    scroll-margin-top: 120px;
 }
 
 .section-tag {
@@ -438,6 +458,9 @@ a {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        border-radius: 28px;
+        padding: 18px;
+        top: 12px;
     }
 
     .nav-links {
